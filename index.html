@@ -3,123 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 基础SEO -->
     <title>IP归属地查询工具 - 快速查询IP地址归属地信息</title>
-    <meta name="description" content="免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。">
-    <meta name="keywords" content="IP查询,IP归属地,IP地址查询,IP定位,IP地理位置">
+    <meta name="description" content="免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。快速、准确、无需注册。">
+    <meta name="keywords" content="IP查询,IP归属地,IP地址查询,IP定位,IP地理位置,IP查询工具,本机IP查询">
+    <meta name="author" content="IP归属地查询工具">
+    <link rel="canonical" href="https://your-domain.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:title" content="IP归属地查询工具 - 快速查询IP地址归属地信息">
+    <meta property="og:description" content="免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。">
+    <meta property="og:image" content="https://your-domain.com/og-image.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="IP归属地查询工具">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://your-domain.com/">
+    <meta name="twitter:title" content="IP归属地查询工具 - 快速查询IP地址归属地信息">
+    <meta name="twitter:description" content="免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。">
+    <meta name="twitter:image" content="https://your-domain.com/twitter-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect fill='%231877f2' width='512' height='512' rx='100'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='200' fill='white'%3EIP%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect fill='%231877f2' width='512' height='512' rx='100'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='200' fill='white'%3EIP%3C/text%3E%3C/svg%3E">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1877f2">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://ipinfo.io">
+    <link rel="dns-prefetch" href="https://ipinfo.io">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "IP归属地查询工具",
+        "url": "https://your-domain.com/",
+        "description": "免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://your-domain.com/?ip={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "IP归属地查询工具",
+        "description": "免费在线IP归属地查询工具，支持查询任意IP地址的国家、地区、城市、运营商等详细信息。",
+        "url": "https://your-domain.com/",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "IP归属地查询工具",
+            "url": "https://your-domain.com/"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://your-domain.com/"
+        }]
+    }
+    </script>
+
+    <!-- Google AdSense (请替换为您的实际代码) -->
+    <!--
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    -->
 </head>
 <body>
+    <!-- 跳转到主内容（无障碍） -->
+    <a href="#main-content" class="skip-to-content">跳转到主内容</a>
+
     <div class="container">
-        <nav class="top-nav">
+        <!-- 顶部导航 -->
+        <nav class="top-nav" role="navigation" aria-label="主导航">
             <ul>
-                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="index.html" class="active" aria-current="page">首页</a></li>
                 <li><a href="about.html">关于</a></li>
+                <li><button id="themeToggle" aria-label="切换深色模式">🌙</button></li>
+                <li><button id="installBtn" aria-label="安装应用">📱 安装</button></li>
             </ul>
         </nav>
 
+        <!-- 页面头部 -->
         <header>
             <h1>🌍 IP归属地查询</h1>
             <p class="subtitle">查询IP地址的详细归属地信息</p>
         </header>
 
-        <!-- 搜索区域 -->
-        <div class="search-section">
-            <div class="search-box">
-                <input
-                    type="text"
-                    id="ipInput"
-                    placeholder="请输入IP地址（如：8.8.8.8）"
-                    autocomplete="off"
-                >
-                <button id="searchBtn" onclick="queryIP()">
-                    <span class="btn-text">查询</span>
-                    <span class="btn-icon">🔍</span>
-                </button>
-            </div>
-            <div class="quick-actions">
-                <button class="btn-secondary" onclick="queryMyIP()">
-                    <span>📍 查询我的IP</span>
-                </button>
-            </div>
-        </div>
+        <!-- 主布局 -->
+        <div class="main-layout">
+            <!-- 主内容区 -->
+            <main id="main-content">
+                <!-- 搜索区域 -->
+                <section class="search-section" aria-label="IP查询输入">
+                    <div class="search-box">
+                        <label for="ipInput" class="visually-hidden">输入IP地址</label>
+                        <input
+                            type="text"
+                            id="ipInput"
+                            placeholder="请输入IP地址（如：8.8.8.8）"
+                            autocomplete="off"
+                            aria-label="IP地址输入框"
+                        >
+                        <button id="searchBtn" onclick="queryIP()" aria-label="查询IP地址">
+                            <span class="btn-text">查询</span>
+                            <span class="btn-icon">🔍</span>
+                        </button>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="btn-secondary" onclick="queryMyIP()" aria-label="查询我的IP地址">
+                            <span>📍 查询我的IP</span>
+                        </button>
+                    </div>
+                </section>
 
-        <!-- 加载提示 -->
-        <div id="loading" class="loading" style="display: none;">
-            <div class="spinner"></div>
-            <p>正在查询IP信息...</p>
-        </div>
+                <!-- 加载提示 -->
+                <div id="loading" class="loading" style="display: none;" role="status" aria-live="polite">
+                    <div class="spinner" aria-hidden="true"></div>
+                    <p>正在查询IP信息...</p>
+                </div>
 
-        <!-- 错误提示 -->
-        <div id="error" class="error" style="display: none;"></div>
+                <!-- 错误提示 -->
+                <div id="error" class="error" style="display: none;" role="alert" aria-live="assertive"></div>
 
-        <!-- IP信息显示 -->
-        <div id="ipInfo" class="ip-info" style="display: none;">
-            <div class="info-header">
-                <h2 id="ipAddress"></h2>
-                <span id="ipType" class="ip-type"></span>
-            </div>
-            <div class="info-grid">
-                <div class="info-item">
-                    <span class="info-label">🌏 国家/地区</span>
-                    <span class="info-value" id="country"></span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">📍 省份/州</span>
-                    <span class="info-value" id="region"></span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">🏙️ 城市</span>
-                    <span class="info-value" id="city"></span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">📮 邮编</span>
-                    <span class="info-value" id="zip"></span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">🌐 运营商</span>
-                    <span class="info-value" id="isp"></span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">🏢 组织</span>
-                    <span class="info-value" id="org"></span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">📡 经纬度</span>
-                    <span class="info-value" id="location"></span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">⏰ 时区</span>
-                    <span class="info-value" id="timezone"></span>
-                </div>
-            </div>
+                <!-- IP信息显示 -->
+                <article id="ipInfo" class="ip-info" style="display: none;" aria-live="polite">
+                    <div class="info-header">
+                        <h2 id="ipAddress"></h2>
+                        <div class="header-actions">
+                            <span id="ipType" class="ip-type"></span>
+                            <button class="btn-copy" id="copyIPBtn" title="复制IP地址" aria-label="复制IP地址">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">🌏 国家/地区</span>
+                            <span class="info-value" id="country"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📍 省份/州</span>
+                            <span class="info-value" id="region"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🏙️ 城市</span>
+                            <span class="info-value" id="city"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📮 邮编</span>
+                            <span class="info-value" id="zip"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🌐 运营商</span>
+                            <span class="info-value" id="isp"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">🏢 组织</span>
+                            <span class="info-value" id="org"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📡 经纬度</span>
+                            <span class="info-value" id="location"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">⏰ 时区</span>
+                            <span class="info-value" id="timezone"></span>
+                        </div>
+                    </div>
 
-            <!-- 地图容器 -->
-            <div class="map-container">
-                <h3>🗺️ 地理位置</h3>
-                <div id="mapLink" class="map-link"></div>
-            </div>
-        </div>
+                    <!-- 地图容器 -->
+                    <div class="map-container">
+                        <h3>🗺️ 地理位置</h3>
+                        <div id="mapLink" class="map-link"></div>
+                    </div>
 
-        <div class="instructions">
-            <h3>📖 使用说明</h3>
-            <ul>
-                <li>在输入框中输入要查询的IP地址（支持IPv4格式）</li>
-                <li>点击"查询"按钮获取该IP的归属地信息</li>
-                <li>点击"查询我的IP"按钮可以快速查询您当前的IP地址信息</li>
-                <li>查询结果包括：国家、地区、城市、运营商、经纬度、时区等详细信息</li>
-                <li>支持查看IP地理位置的地图链接</li>
-            </ul>
-            <div class="api-notice">
-                <strong>提示：</strong>本工具使用免费API服务，查询结果仅供参考。
-            </div>
+                    <!-- QR码分享 -->
+                    <div class="qr-section">
+                        <h3>📱 分享</h3>
+                        <div id="qrContainer" class="qr-container"></div>
+                    </div>
+                </article>
+
+                <!-- 查询历史 -->
+                <section class="history-section" aria-label="查询历史">
+                    <div class="history-header">
+                        <h3>📜 查询历史</h3>
+                        <button class="btn-clear-history" onclick="clearHistory()" aria-label="清除历史记录">清除</button>
+                    </div>
+                    <div id="historyList" aria-live="polite">
+                        <p class="history-empty">暂无查询历史</p>
+                    </div>
+                </section>
+
+                <!-- 使用说明 -->
+                <section class="instructions" aria-label="使用说明">
+                    <h3>📖 使用说明</h3>
+                    <ul>
+                        <li>在输入框中输入要查询的IP地址（支持IPv4格式）</li>
+                        <li>点击"查询"按钮获取该IP的归属地信息</li>
+                        <li>点击"查询我的IP"按钮可以快速查询您当前的IP地址信息</li>
+                        <li>查询结果包括：国家、地区、城市、运营商、经纬度、时区等详细信息</li>
+                        <li>支持查看IP地理位置的地图链接</li>
+                        <li>点击查询历史中的记录可快速重新查询</li>
+                        <li>支持深色模式切换，点击右上角月亮/太阳图标即可切换</li>
+                    </ul>
+                    <div class="api-notice">
+                        <strong>提示：</strong>本工具使用免费API服务，查询结果仅供参考。
+                    </div>
+                </section>
+
+                <!-- 移动端广告位 -->
+                <aside class="ad-placeholder ad-mobile" aria-label="广告">
+                    <!-- Google AdSense 移动端广告代码 -->
+                    <!--
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="horizontal"
+                         data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    -->
+                    <!-- <p>广告位 (320x100)</p> -->
+                </aside>
+            </main>
+
+            <!-- 侧边栏（桌面端广告位） -->
+            <aside class="sidebar" aria-label="侧边栏">
+                <div class="ad-placeholder ad-sidebar">
+                    <!-- Google AdSense 桌面端广告代码 -->
+                    <!--
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="vertical"
+                         data-full-width-responsive="false"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                    -->
+                    <!-- <p>广告位 (300x600)</p> -->
+                </div>
+            </aside>
         </div>
 
         <footer>
-            <p>数据来源：<a href="https://ipinfo.io" target="_blank">IPinfo.io</a></p>
+            <p>数据来源：<a href="https://ipinfo.io" target="_blank" rel="noopener">IPinfo.io</a></p>
             <p>© 2025 IP归属地查询工具 | <a href="about.html">关于我们</a> | <a href="privacy.html">隐私政策</a></p>
         </footer>
     </div>
 
+    <!-- JavaScript 模块 -->
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

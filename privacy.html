@@ -3,16 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 基础SEO -->
     <title>隐私政策 - IP归属地查询工具</title>
     <meta name="description" content="IP归属地查询工具的隐私政策，了解我们如何保护您的隐私和数据安全。">
+    <meta name="keywords" content="隐私政策,数据保护,用户隐私">
+    <link rel="canonical" href="https://your-domain.com/privacy.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/privacy.html">
+    <meta property="og:title" content="隐私政策 - IP归属地查询工具">
+    <meta property="og:description" content="IP归属地查询工具的隐私政策，了解我们如何保护您的隐私和数据安全。">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect fill='%231877f2' width='512' height='512' rx='100'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='200' fill='white'%3EIP%3C/text%3E%3C/svg%3E">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1877f2">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "隐私政策 - IP归属地查询工具",
+        "description": "IP归属地查询工具的隐私政策，了解我们如何保护您的隐私和数据安全。",
+        "url": "https://your-domain.com/privacy.html",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "IP归属地查询工具",
+            "url": "https://your-domain.com/"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "首页",
+                "item": "https://your-domain.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "隐私政策",
+                "item": "https://your-domain.com/privacy.html"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">跳转到主内容</a>
+
     <div class="container">
-        <nav class="top-nav">
+        <nav class="top-nav" role="navigation" aria-label="主导航">
             <ul>
                 <li><a href="index.html">首页</a></li>
                 <li><a href="about.html">关于</a></li>
+                <li><button id="themeToggle" aria-label="切换深色模式">🌙</button></li>
             </ul>
         </nav>
 
@@ -21,8 +81,8 @@
             <p class="subtitle">我们重视并保护您的隐私</p>
         </header>
 
-        <div class="content-section">
-            <p class="last-updated"><strong>最后更新时间：</strong>2025年1月</p>
+        <main id="main-content" class="content-section">
+            <p class="last-updated"><strong>最后更新时间：</strong>2025年2月</p>
 
             <div class="policy-section">
                 <h2>📋 隐私政策概述</h2>
@@ -35,7 +95,7 @@
                 <ul>
                     <li><strong>IP地址：</strong>当您使用我们的服务查询IP归属地时，您输入的IP地址将被临时处理以提供查询结果。</li>
                     <li><strong>访问者IP：</strong>当您点击"查询我的IP"功能时，我们会获取您当前的公网IP地址以提供查询服务。</li>
-                    <li><strong>技术信息：</strong>我们可能收集浏览器类型、操作系统、访问时间等基本技术信息，用于改进服务质量。</li>
+                    <li><strong>本地存储：</strong>查询历史和主题偏好仅存储在您的浏览器本地存储中，不会上传到我们的服务器。</li>
                 </ul>
             </div>
 
@@ -44,9 +104,9 @@
                 <h3>我们使用收集的信息用于：</h3>
                 <ul>
                     <li>提供IP归属地查询服务</li>
+                    <li>保存查询历史以方便您快速访问</li>
+                    <li>保存您的主题偏好设置</li>
                     <li>改善和优化用户体验</li>
-                    <li>分析服务使用情况，提升服务质量</li>
-                    <li>维护网站安全和防止滥用</li>
                 </ul>
             </div>
 
@@ -56,8 +116,8 @@
                 <ul>
                     <li>所有查询请求通过HTTPS加密传输</li>
                     <li>我们不会永久存储您查询的IP地址信息</li>
-                    <li>查询记录仅用于临时处理，不会长期保存</li>
-                    <li>我们采用行业标准的安全措施保护数据</li>
+                    <li>查询历史仅保存在您的浏览器本地，不会上传</li>
+                    <li>您随时可以清除本地存储的查询历史</li>
                 </ul>
             </div>
 
@@ -67,17 +127,17 @@
                 <ul>
                     <li>查询请求会发送到第三方API服务器</li>
                     <li>第三方服务提供商可能有自己的隐私政策</li>
-                    <li>我们建议您查阅 <a href="https://ipinfo.io/privacy-policy" target="_blank">IPinfo.io的隐私政策</a></li>
+                    <li>我们建议您查阅 <a href="https://ipinfo.io/privacy-policy" target="_blank" rel="noopener">IPinfo.io的隐私政策</a></li>
                 </ul>
             </div>
 
             <div class="policy-section">
-                <h2>🍪 Cookies和追踪技术</h2>
-                <p>我们的网站可能使用以下技术：</p>
+                <h2>🍪 Cookies和本地存储</h2>
+                <p>我们的网站使用以下技术：</p>
                 <ul>
-                    <li><strong>本地存储：</strong>用于临时保存用户偏好和查询历史（仅存储在您的浏览器中）</li>
-                    <li><strong>分析工具：</strong>可能使用Google Analytics等工具分析网站访问情况</li>
-                    <li>您可以通过浏览器设置管理或禁用这些功能</li>
+                    <li><strong>本地存储（LocalStorage）：</strong>用于保存查询历史记录（最多5条）和主题偏好，仅存储在您的浏览器中。</li>
+                    <li>您可以通过浏览器设置清除本地存储数据</li>
+                    <li>我们不使用传统的Cookie追踪技术</li>
                 </ul>
             </div>
 
@@ -86,10 +146,14 @@
                 <p>您拥有以下权利：</p>
                 <ul>
                     <li>随时停止使用我们的服务</li>
-                    <li>清除浏览器中的本地存储数据</li>
-                    <li>要求了解我们如何使用您的信息</li>
-                    <li>要求删除我们可能保留的任何个人信息</li>
+                    <li>清除浏览器中的本地存储数据（包括查询历史和主题偏好）</li>
+                    <li>选择不使用本服务</li>
                 </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2>👶 儿童隐私</h2>
+                <p>我们的服务面向所有年龄段的用户。由于我们不收集个人信息，因此特别适合未成年人使用。</p>
             </div>
 
             <div class="policy-section">
@@ -113,11 +177,24 @@
             <div class="back-link">
                 <a href="index.html">← 返回首页</a>
             </div>
-        </div>
+        </main>
 
         <footer>
             <p>© 2025 IP归属地查询工具 | <a href="about.html">关于我们</a> | <a href="privacy.html">隐私政策</a></p>
         </footer>
     </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script>
+        // 初始化主题
+        document.addEventListener('DOMContentLoaded', function() {
+            UI.initTheme();
+            const themeToggle = document.getElementById('themeToggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', UI.toggleTheme);
+            }
+        });
+    </script>
 </body>
 </html>
