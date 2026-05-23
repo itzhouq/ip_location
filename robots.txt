@@ -1,0 +1,45 @@
+# robots.txt for IP归属地查询工具
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# 禁止抓取无意义的资源
+Disallow: /sw.js
+Disallow: /manifest.json
+Disallow: /*.json$
+
+# 主流搜索引擎爬虫
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+# 屏蔽常见的恶意/低质量爬虫
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# 站点地图
+Sitemap: https://your-domain.com/sitemap.xml
